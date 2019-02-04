@@ -1,0 +1,1 @@
+This App can be used by both Clients and Service Providers. The App when run will start on a UI that will let a user choose if he/she is a provider or a client. This can be change from the manifest to build an specific apk for client or service provider.
