@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="15sp"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:text="Date Request: "
+            android:fontFamily="@font/nunito"
+
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateSched"
+            android:fontFamily="@font/nunito"
+
+            android:textColor="@color/colorBlack"
+            android:text="dateSched"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+
+            android:textColor="@color/colorMaroon"
+            android:text="Time Request: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+
+            android:id="@+id/timeRequest"
+            android:textColor="@color/colorBlack"
+            android:text="timeRequest"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Request Service: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consumerServiceRequest"
+            android:fontFamily="@font/nunito"
+
+            android:textColor="@color/colorBlack"
+            android:text="consumerServiceRequest"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Provider Name: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+
+            android:id="@+id/providerName"
+            android:text="providerName"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Provider Phone: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/providerPhone"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+
+            android:text="providerPhone"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Age: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/providerAge"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+
+            android:text="providerAge"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Charge: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+
+            android:id="@+id/payment"
+            android:text="payment"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMaroon"
+            android:fontFamily="@font/nunito"
+
+            android:text="Your Note: "
+            android:textStyle="bold"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consumerNote"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+
+            android:text="consumerNote"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

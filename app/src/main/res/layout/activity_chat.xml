@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="#ffffff"
+android:paddingBottom="0dp"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:paddingTop="0dp"
+android:orientation="vertical"
+tools:context="com.alliancecode.fixit.Chat">
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ProfileAppBar"
+        android:elevation="4dp"
+        android:id="@+id/profileToolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content">
+
+     <!--           <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/chatwithImg"
+                    android:tint="#ffffff"
+                    android:src="@drawable/ic_account_circle"
+                    android:scaleType="centerCrop"
+                    />
+-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/chatwithImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:tint="#ffffff"
+                    android:src="@drawable/ic_account_circle"
+                    android:scaleType="centerCrop" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15sp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:id="@+id/tvChatwithName"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:id="@+id/tvChatwithNumber"
+                        android:textSize="12dp"
+                        android:textColor="#ffffff"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_call_image"
+                android:tint="#ffffff"
+                android:id="@+id/callImage"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:id="@+id/layout1"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="5dp">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom" />
+
+
+
+
+</LinearLayout>
+

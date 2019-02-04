@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alliancecode.fixit.ConsumerHomeActivity">
+<!--
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@drawable/shape_now"
+                android:text="1. Service"
+                android:textSize="12sp"
+                android:enabled="true"
+                android:layout_weight="1"
+                android:id="@+id/chooseServiceBtn"
+                android:textColor="#ffffff"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@drawable/shape_now"
+                android:text="2. Details"
+                android:textSize="12sp"
+                android:enabled="true"
+                android:layout_weight="1"
+                android:id="@+id/detailServiceBtn"
+                android:textColor="#000000"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@drawable/shape_done"
+                android:text="3. Summary"
+                android:textSize="12sp"
+                android:enabled="true"
+                android:layout_weight="1"
+                android:id="@+id/summaryServiceBtn"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT A SERVICE"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:visibility="visible"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:weightSum="10">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARPENTER"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/carpenterBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PLUMBER"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/plumberBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MASON"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/masonBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ELECTRICIAN"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/electricianBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LAUNDRY"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/laundryBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAINTER"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/painterBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLIANCE REPAIR"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/applianceBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AIRCON AND REFRIGERATOR REPAIR"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/airconAndRefBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House Keeping"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/houseKeepingBtn"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPUTER AND LAPTOP REPAIR"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="#ffffff"
+                android:id="@+id/computerAndLaptopBtn"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

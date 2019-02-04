@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ArrayCity">
+        <item>Mandaluyong</item>
+        <item>Makati</item>
+        <item>Quezon</item>
+        <item>Caloocan</item>
+        <item>San Juan</item>
+        <item>Manila</item>
+        <item>Pasay</item>
+        <item>Paranaque</item>
+        <item>Pateros</item>
+        <item>Taguig</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="televisionArray">
+        <item>Select A Type: </item>
+        <item>Flat Screen LCD</item>
+        <item>Old Type w/ Picture Tube</item>
+    </string-array>
+
+</resources>

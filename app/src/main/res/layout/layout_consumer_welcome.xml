@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/consumer_welcome"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<include layout="@layout/app_bar_blank"></include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bgg"
+            android:scaleType="centerCrop"
+            android:foreground="#5a000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="80dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Your helping hand \nfor your needs"
+            android:fontFamily="@font/nunito"
+            android:layout_margin="50dp"
+            android:textSize="22dp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#583d34"
+        android:text="Need an assistance for\n your household needs?"
+        android:layout_marginTop="50dp"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Book Service"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        style="@style/buttonRounded_style"
+        android:id="@+id/btnBook"
+        android:textColor="#da8221"/>
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+        android:textColor="#646363"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text=" FixIT: Household Services \u00a9 Alliance Code 2018"/>
+
+
+
+</RelativeLayout>

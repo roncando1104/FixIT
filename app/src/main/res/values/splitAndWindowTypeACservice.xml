@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="SplitAndWindowACserviceArray">
+        <item>Service Type: </item>
+        <item>Cleaning</item>
+        <item>Damage Cooling System</item>
+        <item>Water Leakage</item>
+    </string-array>
+
+</resources>

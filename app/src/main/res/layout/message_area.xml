@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:elevation="50dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/message_shape"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/messageArea"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_weight="4"
+                android:maxLength="160"
+                android:background="@android:color/transparent"
+                android:hint="Write a message..."
+                android:maxHeight="80dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/sendButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/ic_send"
+                android:tint="#eca14f"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/messagingSV">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/textList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>

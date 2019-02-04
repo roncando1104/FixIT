@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ElectricFanArray">
+        <item>Select A Type: </item>
+        <item>Industrial Fan</item>
+        <item>Ceiling Fan</item>
+        <item>Wall Fan</item>
+        <item>Stand Fan</item>
+    </string-array>
+
+</resources>

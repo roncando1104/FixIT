@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorOrangeFixit">#ffa63b</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#dc0000</color>
+    <color name="colorMaroon">#860303</color>
+
+    <color name="colorBrown">#BE975B</color>
+    <color name="colorSkyBlueDark">#2dba8d</color>
+    <color name="colorBrownDark">#825B1F</color>
+
+    <color name="colorPrimary">#f5f7fa</color>
+    <color name="colorPrimaryDark">#e6e9ed</color>
+    <color name="colorAccent">#eca14f</color>
+    <color name="lightblack">#212121</color>
+    <color name="colorTransWhite">#D9f5f7fa</color>
+    <color name="brown">#583d34</color>
+    <color name="fab_pressed">#546e7a</color>
+    <color name="buttonTask">#583d34</color>
+    <color name="buttonRadAndCbox">#006000</color>
+    <color name="black">#000000</color>
+</resources>
+
+    <!--  <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryDark">#070716</color>
+    <color name="colorPrimary">#0a091b</color>
+    <color name="colorAccent">#FF4081</color>
+
+     -->

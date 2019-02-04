@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="washingMachineArray">
+        <item>Select A Type: </item>
+        <item>Analog Washing Machine</item>
+        <item>Digital Washing Machine</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.alliancecode.fixit.ConsumerLoginActivity"
+
+    tools:layout_editor_absoluteX="82dp"
+    tools:layout_editor_absoluteY="507dp">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/fixiticon" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/editText_Style"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/nunito"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/editText_Style"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_lpassword"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/nunito"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/buttonTrans_Style"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="Sign in" />
+
+
+    <TextView
+        android:id="@+id/labelRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="63dp"
+        android:fontFamily="@font/nunito"
+        android:text="Don't have an account yet?"
+        android:textColor="#583d34"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/labelRegister"
+        android:layout_toEndOf="@+id/labelRegister"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="Create one!"
+        android:textColor="@drawable/text_custom"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:textColor="@drawable/text_custom"
+        android:id="@+id/forgotPassword"
+        android:fontFamily="@font/nunito"
+        android:text="Forgot password?"
+        android:layout_marginBottom="10sp"
+        android:layout_alignParentBottom="true"
+        android:textSize="15dp"/>
+
+
+
+</RelativeLayout>
+

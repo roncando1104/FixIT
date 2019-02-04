@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/provider_welcome"
+    tools:context="com.alliancecode.fixit.WelcomeMainProvider"
+    android:background="@color/colorPrimaryDark">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/app_bar_blank"
+            android:id="@+id/app_bar">
+        </include>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/bannerwithbglogo"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-32dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="3dp"
+                android:id="@+id/imgProImage"
+                android:src="@mipmap/ic_profileimage"
+                android:elevation="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:gravity="center"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="220dp"
+                android:id="@+id/txtProviderName"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:gravity="center"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="250dp"
+                android:id="@+id/txtProviderPhone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:gravity="center"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="280dp"
+                android:id="@+id/txtProviderService"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/starrating"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/brown"
+                android:layout_gravity="right"
+                android:layout_marginTop="132dp"
+                android:textSize="22dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/txtRating"/>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/buttonRounded_style"
+            android:fontFamily="@font/nunito"
+            android:textColor="#da8221"
+            android:text="GET STARTED"
+            android:id="@+id/getStarted"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="85dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+        android:textColor="#646363"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text=" FixIT: Household Services \u00a9 Alliance Code 2018"/>
+
+
+
+
+
+
+</RelativeLayout>

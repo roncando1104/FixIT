@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alliancecode.fixit">
+
+  <!--
+    <uses-sdk
+        android:minSdkVersion="2"
+        android:targetSdkVersion="15" />
+-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_fixitlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_fixitlogo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- .Splash -->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!-- added code -->
+                <category android:name="com.alliancecode.fixit" />
+
+            </intent-filter>
+
+
+
+            <!-- To open app using link -->  <!-- added code -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- sending sms-->
+                <data
+                    android:host="fixit.app.com"
+                    android:pathPrefix="/booking"
+                    android:scheme="http">
+
+                </data>
+            </intent-filter>
+
+
+
+        </activity>
+        <activity
+            android:name=".ProviderLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConsumerLoginActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--
+              <provider
+                  android:name="android.support.v4.content.FileProvider"
+                  android:authorities="com.example.android.fileprovider"
+                  android:exported="false"
+                  android:grantUriPermissions="true">
+
+                  <meta-data
+                      android:name="android.support.FILE_PROVIDER_PATHS">
+                     android:resource="@xml/file_paths">
+            </meta-data>
+
+        </provider>
+        -->
+
+        <activity
+            android:name=".ConsumerMapActivity"
+            android:label="@string/title_activity_consumer_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProviderMapActivity"
+            android:label="@string/title_activity_provider_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConsumerSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProviderSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ConsumerHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskReceiver"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistorySingleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PendingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PendingActivityProviders"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Chat"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Users"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WelcomeMainProvider"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Splash"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SplashProvider"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".MyRecyclerViewAdapter"
+            android:screenOrientation="portrait" ></activity>
+
+
+    </application>
+
+</manifest>

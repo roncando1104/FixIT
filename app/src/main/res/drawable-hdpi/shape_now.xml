@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Colored rectangle-->
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:width="130sp"
+                android:height="35sp"/>
+            <solid android:color="#ffa63b"/>
+            <corners android:radius="0sp"/>
+        </shape>
+    </item>
+
+    <!--this rectangle for the top arrow edge-->
+    <!--Its color should be the same as the layout's background-->
+    <item
+        android:top="-26sp"
+        android:bottom="59sp"
+        android:right="-13sp">
+        <rotate
+            android:fromDegrees="37">
+            <shape android:shape="rectangle">
+                <solid android:color="#808080"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <!--this rectangle for the lower arrow edge-->
+    <!--Its color should be the same as the layout's background-->
+
+    <item
+        android:top="61sp"
+        android:bottom="-27sp"
+        android:right="-13sp">
+        <rotate
+            android:fromDegrees="-37">
+            <shape android:shape="rectangle">
+                <solid android:color="#808080"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

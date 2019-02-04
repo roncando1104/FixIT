@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrangeFixit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENDING SERVICE REQUEST IS OVERDUE !"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The system will automatically remove"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="your OVERDUE pending service request."
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

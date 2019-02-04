@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ElectricStoveArray">
+        <item>Type: </item>
+        <item>Electric Stove Only</item>
+        <item>Electric Oven Only</item>
+        <item>Electric Stove w/ Oven</item>
+    </string-array>
+
+</resources>

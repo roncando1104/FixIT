@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ARE YOU SURE ?"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The service request will be cancelled."
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/forgotPassword"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="NO"
+                android:textSize="15dp"
+
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorOrangeFixit"
+                android:id="@+id/doneNot"/>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="YES"
+
+                android:textColor="@color/colorOrangeFixit"
+                android:id="@+id/doneYes"/>
+
+        </LinearLayout>
+<!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+-->
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

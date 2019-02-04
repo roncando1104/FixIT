@@ -1,0 +1,121 @@
+Saving profile image
+
+1. Add this to the App Gradle:
+	   compile 'com.google.firebase:firebase-storage:15.0.0'    //firebase storage
+  	   compile 'com.github.bumptech.glide:glide:4.0.0'         //firebase storage_GLIDE_ allow to put image in the form of URL
+2. Create ImageView in the LAYOUT activity_consumer_layout:
+	  <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/profileImage"
+        android:src="@mipmap/ic_profileimage"
+        android:layout_marginBottom="10sp"/>
+
+3.1 JAVA  
+	private ImageView nProfileImage;
+        nProfileImage = (ImageView) findViewById(R.id.profileImage);
+
+	nProfileImage.setOnClickListener(new View.OnClickListener() {      //#16 Saving profile image
+            @Override
+            public void onClick(View view) {                            //#16 Saving profile image
+                Intent intent = new Intent(Intent.ACTION_PICK);        //Calling the Gallery
+                intent.setType("image/*");                            // setting what type of files to be picked
+                startActivityForResult(intent, 1 );                   //starting and Calling the preDefined activityResult method 
+
+3.1   Note: Not Working in me...
+	private Uri resultUri;
+	
+ protected void onActivityResult(int requestCode, int resultCode, Intent data) {                     //#16 Saving profile image          Creating the preDefined method onActivityResult
+        super.onActivityResult(requestCode, resultCode, data);                                            //#16 Saving profile image
+
+        if (requestCode == 1 && requestCode == Activity.RESULT_OK){
+            final Uri imageUri = data.getData();                                // getting and storing the exact location of picture   ...final
+            resultUri = imageUri;
+            nProfileImage.setImageURI(resultUri);                            //setting the ImageView... changing the picture
+
+
+3.1    Working in me....
+	
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {            //#16 Saving profile image   Creating the preDefined method onActivityResult
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            try{
+                final Uri imageUri = data.getData();                                               //#16 Saving profile image   // getting picture from gallery   ...final
+                resultUri = imageUri;
+                final InputStream imageStream = getContentResolver().openInputStream(resultUri);
+                final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+                nProfileImage.setImageBitmap(selectedImage);                                  //#16 Saving profile image   //setting the ImageView... changing the picture
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+
+
+
+
+
+3.2   private void saveConsumerInformation() {  .......
+	  Bitmap bitmap = null;                                    
+
+            try {
+                bitmap = MediaStore.Images.Media.getBitmap(getApplication().getContentResolver(), resultUri);          // passing resultUri image into bitmap.....
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+ ByteArrayOutputStream baos = new ByteArrayOutputStream();            //#16 Saving profile image...  compressing the bitmap image
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 20, baos);       //#16 Saving profile image...  compressing the bitmap image
+            byte[] data = baos.toByteArray();
+
+
+       uploadTask.addOnFailureListener(new OnFailureListener() {    //#16 Saving profile image... creating listener
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    finish();
+                    return;
+                }
+            });
+
+
+	UploadTask uploadTask = filePath.putBytes(data);                  // trying to upload the image in the Storage Firebase...
+
+            uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {       //#16 Saving profile image... creating listener
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {                         //#16 Saving profile image...
+                    Uri downloadUrl = taskSnapshot.getDownloadUrl();                    // getting the downloaded image.
+
+                    Map newImage = new HashMap();                                       //saving image
+                    newImage.put("profileImageUrl", downloadUrl.toString());
+                    nConsumerDatabase.updateChildren(newImage);
+
+                    finish();
+                    return;
+
+
+                }
+            });
+        } else {
+            finish();
+        }
+
+3.3. 
+	 private String nProfileImageUrl;
+	private void getConsumerInformation(){    ....
+
+  if (map.get("profileImageUrl")!=null){                         //#16 Saving profile image //*******asking if child("profileImageUrl ") has a value
+                        nProfileImageUrl = map.get("profileImageUrl").toString();  //#16 Saving profile image //******
+                        Glide.with(getApplication()).load(nProfileImageUrl).into(nProfileImage);        //#16 Saving profile image //****** using Glide
+
+                    }
+                }
+
+
+
+

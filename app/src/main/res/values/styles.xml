@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme.                       xmlns:android="http://schemas.android.com/tools">    -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">  <!--/no action bar -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">false</item>  <!--/full screen window -->
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+
+    </style>
+
+    <style name="ProfileAppBar">
+        <item name="android:background">#eca14f</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorOrangeFixit</item>
+    </style>
+
+ <style name="customToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PrimaryFlatButton"
+        parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+        <item name="colorControlHighlight">@color/buttonTask</item>
+        <item name="colorAccent">@color/buttonTask</item>
+    </style>
+
+
+
+    <style name="editText_Style">
+        <!-- <item name="android:gravity">center</item>-->
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ems">10</item>
+
+    </style>
+
+    <style name="buttonTrans_Style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_trans</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@drawable/btntrans_text</item>
+        <item name="android:ems">10</item>
+    </style>
+
+
+
+
+    <style name="RadioAndCheckButtonStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/lightblack</item>
+
+    </style>
+
+    <style name="Widget.AppCompat.Button.Borderless."
+        parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/buttonTask</item>
+        <item name="colorAccent">@color/buttonTask</item>
+    </style>
+
+    <!-- Base application theme. -->
+        <!-- Customize your theme here. -->
+
+
+
+
+    <style name="cardViewImage">
+
+        <item name="android:background">@drawable/cardimageview</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="buttonRounded_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_circularrec</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="buttonOrangeRounded_Style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_orangerounded</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@drawable/text_colorstate</item>
+        <item name="android:ems">10</item>
+    </style>
+
+
+
+</resources>

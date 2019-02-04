@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrangeFixit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENDING WORK SCHEDULE ALERT !"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The system detected that you have an"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OVERDUE pending work schedule."
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="And it will automatically be removed "
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="from your pending schedule."
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

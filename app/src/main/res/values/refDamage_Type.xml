@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="RefDamageArray">
+        <item>Damage Type: </item>
+        <item>Damage Cooling System</item>
+        <item>Broken Door</item>
+        <item>Crack on Freezer's Wall</item>
+
+    </string-array>
+
+</resources>

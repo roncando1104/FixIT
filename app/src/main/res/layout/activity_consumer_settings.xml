@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alliancecode.fixit.ConsumerSettingsActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10sp"
+        app:srcCompat="@drawable/fixiticon" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/name"
+        android:fontFamily="@font/nunito"
+        android:hint="Name"
+        android:inputType="textFilter"
+        android:digits="abcdefghijklmnñopqrstuvwxyz ABCDEFGHILKLMNÑOPQRSTUVWZYZ"
+        android:layout_marginBottom="10sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/nunito"
+        android:inputType="textFilter"
+        android:digits="0123456789"
+        android:hint="Phone Number"
+        android:id="@+id/phoneNumber"
+        android:layout_marginBottom="10sp"/>
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:visibility="gone"
+        android:text="Confirm"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/back"
+        android:text="Back"/>
+    -->
+
+
+</LinearLayout>

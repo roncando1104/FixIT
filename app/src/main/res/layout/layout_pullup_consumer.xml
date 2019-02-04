@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:id="@+id/sliding_layout"
+    app:umanoShadowHeight="0dp"
+    app:umanoPanelHeight="110dp"
+    app:umanoParallaxOffset="80dp"
+    app:umanoDragView="@id/dragView"
+    app:umanoOverlay="true"
+    tools:context="com.alliancecode.fixit.Home">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragmentMap"
+        android:visibility="visible">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </RelativeLayout>
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop"
+                app:fabSize="normal"
+                android:elevation="6dp"
+                app:layout_anchorGravity="bottom|right|end"
+                app:srcCompat="@drawable/fixit_logo">
+            </android.support.design.widget.FloatingActionButton>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/fragmentCallService"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="___"
+            android:paddingTop="10sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/providerInfo"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="@color/colorBlack"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/providerProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="10sp"
+                app:srcCompat="@mipmap/ic_profileimage" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:stepSize="0.1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20sp">
+
+
+                <TextView
+                    android:id="@+id/providerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="10sp"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/providerAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="10sp"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/providerServiceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="10sp"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/providerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="10sp"
+                    android:textColor="@color/colorWhite" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/messageBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:text=" "
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/request"
+            android:background="@drawable/button_custom"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito"
+            android:text="@string/callProvider"
+            android:visibility="visible"
+            android:layout_gravity="bottom|center" />
+
+        <Button
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/requestSched"
+            android:background="@drawable/button_custom"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito"
+            android:text="@string/callProvider"
+            android:visibility="gone"
+            android:layout_gravity="bottom|center" />
+<!--
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:hint="Who you want to chat with?"
+            android:visibility="gone"
+            android:id="@+id/etChatwith" />
+ -->
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/chatLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:background="@color/colorBlack"
+            android:orientation="horizontal">
+            <!--pullup layout gone-->
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_custom"
+                android:fontFamily="@font/nunito"
+                android:src="@drawable/ic_message_black"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/messageButton"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_custom"
+                android:fontFamily="@font/nunito"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_call_black"
+                android:layout_gravity="center"
+                android:id="@+id/callButton"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

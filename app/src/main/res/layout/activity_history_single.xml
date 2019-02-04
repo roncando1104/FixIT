@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alliancecode.fixit.HistorySingleActivity">
+    <!--
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/serviceLocationn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance "
+            android:visibility="gone"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/serviceDistance"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/serviceDate"/>
+
+
+    </LinearLayout>
+
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/userImage"
+            android:src="@mipmap/ic_profileimage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+          
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/nunito"
+                        android:text="Name : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name "
+                        android:padding="2sp"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/userName"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Date_Request : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                        android:text="Date"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/serviceDate"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Date_Done : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                       android:text="Date"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/serviceDateDone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Phone : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                        android:text="Phone"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/userPhone"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Address Worksite : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                        android:text="Location"
+                    android:layout_marginBottom="10sp"
+                    android:id="@+id/serviceLocationn"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Payment : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                        android:text="payment"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/paymentPaid"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutServiceGiven"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorMaroon"
+                        android:fontFamily="@font/nunito"
+                        android:textStyle="bold"
+                        android:text="Service Work Done : "
+                        android:padding="2sp"
+                        android:layout_marginBottom="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/nunito"
+                        android:text="Service"
+                        android:layout_marginBottom="10sp"
+                        android:id="@+id/serviceGiven"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+   
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutRating"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="1"
+            android:numStars="5"
+            android:id="@+id/ratingBar"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorMaroon"
+            android:textStyle="bold"
+            android:text="Rating"
+            android:layout_marginBottom="10sp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

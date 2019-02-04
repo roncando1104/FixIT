@@ -1,0 +1,2 @@
+#583d34 = brown
+#ffa63b = orange

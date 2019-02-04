@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="laundryArray">
+        <item>Clothe Color?</item>
+        <item>Colored Only</item>
+        <item>White/Light Only</item>
+        <item>Colored And White</item>
+    </string-array>
+</resources>

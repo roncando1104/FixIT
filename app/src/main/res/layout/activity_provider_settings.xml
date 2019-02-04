@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alliancecode.fixit.ConsumerSettingsActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10sp"
+        app:srcCompat="@mipmap/ic_profileimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:text="Name: "
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3.2"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/name"
+            android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:textColor="@color/colorBlack"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:layout_gravity="center_vertical"
+            android:text="Address: "
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+
+            android:layout_weight="3.2"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/address"
+            android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:textColor="@color/colorBlack"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:layout_gravity="center_vertical"
+            android:text="Age: "
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+
+            android:layout_weight="3.2"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/age"
+            android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:textColor="@color/colorBlack"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:layout_gravity="center_vertical"
+            android:text="Mobile Phone: "
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3.2"
+            android:textColor="@color/colorBlack"
+
+            android:fontFamily="@font/nunito"
+            android:id="@+id/phoneNumber"
+            android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+
+            android:text="Service Type: "
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+
+            android:layout_weight="3.2"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/serviceType"
+            android:layout_marginBottom="10sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

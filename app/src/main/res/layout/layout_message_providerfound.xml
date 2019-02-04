@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrangeFixit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROVIDER FOUND !"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For details please check"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp"
+            android:textSize="15dp"
+
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" the PULL-UP message below."
+            android:textColor="@color/colorBlack"
+            android:padding="5dp"
+            android:textSize="15dp"
+
+            android:fontFamily="@font/nunito"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

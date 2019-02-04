@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="laundryPiecesArray">
+        <item>Quantity</item>
+        <item>1 pc.</item>
+        <item>2 pcs.</item>
+        <item>3 pcs.</item>
+        <item>4 pcs.</item>
+        <item>5 pcs.</item>
+    </string-array>
+</resources>
